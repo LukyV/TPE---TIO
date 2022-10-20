@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+header {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.home {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 300%;
+    font-family: 'Tapestry', cursive;
+
+}
+
+.home img {
+    height: 100px;
+}
+
+.home:hover {
+    color: #56042C;
+}
+
+.home::after {
+    color: white;
+}
+
+.home:active {
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    flex: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    border-bottom: 1px solid rgb(216, 214, 214);
+
+
+}
+
+.barra {
+    position: relative;
+    color: #e2e2e2;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+}
+
+.barra::after {
+    content: "";
+    position: absolute;
+    background-color: #56042C;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0%;
+    transition: 0.4s;
+
+
+}
+
+.barra:hover {
+    color: #56042C;
+}
+
+.barra:hover::after {
+    width: 100%;
+
+
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+aside {
+    flex: 30px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-right: 1px solid rgb(216, 214, 214);
+}
+
+section {
+    flex: 70%;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.contenedor p {
+    padding-top: 10px;
+}
+
+.contenedor h2 {
+    color: #56042C;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: #56042C;
+}
+
+.subtitulos {
+    margin-left: 25px;
+    margin-top: 50px;
+
+}
+
+.sub {
+    margin-left: -15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Tapestry', cursive;
+}
+
+ul li {
+    color: white;
+    padding: 5px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    list-style-type: square;
+
+}
+
+div {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td,
+th {
+    border-bottom: 1px solid rgb(216, 214, 214);
+    text-align: left;
+    padding: 8px;
+    color: white;
+
+}
+
+.duos {
+    display: flex;
+    width: 100%;
+}
+
+.lista {
+    list-style-position: outside;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.conmebol li {
+    list-style-image: url(../imagen/Conmebol.png);
+}
+
+.uefa li {
+    list-style-image: url(../imagen/UEFA.png);
+}
+
+.concacaf li {
+    list-style-image: url(../imagen/concacaf.png);
+}
+
+.caf li {
+    list-style-image: url(../imagen/CAF.png);
+}
+
+.afc li {
+    list-style-image: url(../imagen/AFC.png);
+}
+
+.formulario {
+    width: 300px;
+    background-color: #56042c93;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 100px;
+    box-shadow: 7px 13px 37px rgba(24, 24, 24, 0.87);
+}
+
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.informacion {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(216, 214, 214);
+    font-size: 18px;
+    color: white;
+}
+
+.boton {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+#Random {
+    font-family: 'Water Brush', cursive;
+}
+
+h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #56042C;
+
+}
+.btncampeon {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    background-color: #56042C;
+    cursor: pointer;
+}
+
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid rgb(139, 43, 43);
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: black;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #56042C;
+    color: white;
+  }
+  .tablapre {
+    font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px;
+    
+  }
+  th {
+    background-color: #56042C;
+  }
+  td {
+
+    border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+input {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(216, 214, 214);
+    font-size: 18px;
+    color: white;
+    
+}
+.tabla{
+    width: 100%;
+  
+}
+.boton {
+    cursor: pointer;
+}

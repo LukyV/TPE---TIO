@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../imagen/copa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tapestry&family=Water+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&display=swap" rel="stylesheet">
+
+  <title>Predicciones</title>
+</head>
+
+<body>
+  <header>
+    <a class="home" href="index.html"><img src="../imagen/copa2.png" />
+      <p>QATAR 2022</p>
+    </a>
+  </header>
+  <nav>
+    <a class="barra" href="paises.html">Paises</a>
+    <a class="barra" href="fixture.html">Fixture</a>
+    <a class="barra" href="Predicciones.html">Predicciones</a>
+  </nav>
+  <form class="formulario" id="formtabla">
+    <h4>Prediccion</h4>
+    <label for="nombres">Ingrese su nombre</label>
+    <input type="text" name="nombre">
+    <label for="primero">Ingrese candidato</label>
+    <input type="text" name="campeon">
+    <label for="segundo">Segundo</label>
+    <input type="text" name="subcampeon">
+    <label for="tercero">Tercero</label>
+    <input type="text" name="tercer">
+    <div>
+      <h4>Verificacion</h4>
+      <p>Captcha
+      <p id="Random" class="informacion">00000</p>
+      </p>
+      <p>Ingrese el Numero
+      <p id="respuesta"></p>
+      </p>
+      <input type="number" id="IngresarCaptcha">
+      <button class="boton" id="boton">Enviar Captcha</button>
+      <button class="boton" type="submit" id="botonenviar">Enviar Prediccion</button>
+
+
+    </div>
+    <div class="botonestabla">
+      <button class="boton" type="button" id="Borrar">Eliminar Predicciones</button>
+    </div>
+
+  </form>
+  <h1>PREDICCIONES</h1>
+  <div class="tablapre">
+    <table class="tabla">
+      <thead>
+        <th class="name">Nombre</th>
+        <th class="champ">Campeon</th>
+        <th class="plata">Segundo</th>
+        <th class="bronce">Tercero</th>
+      </thead>
+      <tbody id="contenidotabla">
+
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="../js/tabladinamica.js"></script>
+  <script type="text/javascript" src="../js/tabladinamica.js"></script>
+</body>
+  <footer>&copy; Copyright 2022 - QATAR 2022 - Todos los Derechor Reservados</footer>
+</body>
+<script src="../js/contacto.js"></script>
+
+</html>
