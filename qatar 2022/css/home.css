@@ -247,6 +247,11 @@ th {
     list-style-image: url(../imagen/AFC.png);
 }
 
+.ofc li {
+    list-style-image: url(../imagen/ofc.ico);
+}
+
+
 .formulario {
     width: 300px;
     background-color: #56042c93;
