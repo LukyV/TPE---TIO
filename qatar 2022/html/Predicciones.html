@@ -15,15 +15,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tapestry&family=Water+Brush&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&display=swap" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <title>Predicciones</title>
+  <title>Has tu Predicción</title>
 </head>
 
 <body>
   <header>
     <a class="home" href="index.html"><img src="../imagen/copa2.png" />
-      <p>QATAR 2022</p>
+    <p>QATAR 2022</p>
     </a>
   </header>
   <nav>
@@ -31,35 +30,44 @@
     <a class="barra" href="fixture.html">Fixture</a>
     <a class="barra" href="Predicciones.html">Predicciones</a>
   </nav>
-  <form class="formulario" id="formtabla">
+  <form action="" class="formulario" id="formtabla">
+
     <h4>Prediccion</h4>
-    <label for="nombres">Ingrese su nombre</label>
-    <input type="text" name="nombre">
-    <label for="primero">Ingrese candidato</label>
-    <input type="text" name="campeon">
-    <label for="segundo">Segundo</label>
-    <input type="text" name="subcampeon">
-    <label for="tercero">Tercero</label>
-    <input type="text" name="tercer">
+    
+    <div class="cuadro-input">
+      <label for="nombres">Ingrese su nombre</label>
+      <input type="text" name="nombre" id="nombre" required>
+    </div>
+    <div class="cuadro-input">
+      <label for="primero">Ingrese su candidato al primer puesto</label>
+      <input type="text" name="campeon" id="primerPais" required>
+    </div>
+    <div class="cuadro-input">
+      <label for="segundo">Ingrese su candidato al segundo puesto</label>
+      <input type="text" name="subcampeon" id="segundoPais" required>
+    </div>
+    <div class="cuadro-input">
+      <label for="tercero">Ingrese su candidato al tercer puesto</label>
+      <input type="text" name="tercer" id="tercerPais" required>
+    </div>
+
     <div>
       <h4>Verificacion</h4>
-      <p>Captcha
-      <p id="Random" class="informacion">00000</p>
-      </p>
-      <p>Ingrese el Numero
-      <p id="respuesta"></p>
-      </p>
-      <input type="number" id="IngresarCaptcha">
-      <button class="boton" id="boton">Enviar Captcha</button>
-      <button class="boton" type="submit" id="botonenviar">Enviar Prediccion</button>
-
-
+      <div class="captcha">
+        <img src="" alt="captcha" id="imgCaptcha"><br>
+        <input type="text" id="userRta">
+        <p id="captchaResultado"></p>
+        <button class="boton" id="boton">Enviar Captcha</button>
+      </div>
+      <button class="boton" type="button" id="botonenviar">Enviar Prediccion</button>
+      <p id="compraResultado"></p>
     </div>
     <div class="botonestabla">
       <button class="boton" type="button" id="Borrar">Eliminar Predicciones</button>
     </div>
 
   </form>
+  
   <h1>PREDICCIONES</h1>
   <div class="tablapre">
     <table class="tabla">
@@ -69,22 +77,17 @@
         <th class="plata">Segundo</th>
         <th class="bronce">Tercero</th>
       </thead>
-      <tbody id="contenidotabla">
-
-      </tbody>
+        <tbody id="contenidotabla">
+        </tbody>
     </table>
   </div>
-  <script type="text/javascript" src="../js/tabladinamica.js"></script>
-  <script type="text/javascript" src="../js/tabladinamica.js"></script>
+  <footer>
+    <p> &copy; Copyright 2022 - QATAR 2022 - Todos los Derechor Reservados</p>
+    <a href="https://www.facebook.com/fifaworldcup/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/fifaworldcup_es?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/fifaworldcup/?hl=es"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </footer>
 </body>
-<footer>
-  <p> &copy; Copyright 2022 - QATAR 2022 - Todos los Derechor Reservados</p>
-      <a href="https://www.facebook.com/fifaworldcup/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-      <a href="https://twitter.com/fifaworldcup_es?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/fifaworldcup/?hl=es"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-</footer>
-
-</body>
-<script src="../js/contacto.js"></script>
+<script src="../js/tabladinamica.js"></script>
 
 </html>
