@@ -9,7 +9,7 @@ let Predicciones = [
         nombreAdd:"Nahuel",
         CampeonAdd:"Argentina",
         SubcampeonAdd:"Croacia",
-        TerceroAdd:"Inglaterra",
+        TerceroAdsdasdasd:"Inglaterra",
     }
 ]
 
@@ -19,7 +19,6 @@ window.onload = generarCaptcha();
 window.onload = mostrar_tabla();
 
 document.querySelector("#botonenviar").addEventListener("click", validarDatos);
-document.querySelector("#Borrar").addEventListener("click", borrar_tabla);
 
 function generarCaptcha() {
     let num = Math.floor(Math.random()*8);
@@ -31,19 +30,15 @@ function generarCaptcha() {
 }
 function validarDatos() {
     
-    let rtaCaptcha = document.querySelector("#userRta").value;
-
+    let rtaCaptcha = dadasdasd
         if (rtaCaptcha == rta){
                 add();
                 vaciar_contenido();
                 document.querySelector("#captchaResultado").innerHTML="";
 
+        }("#userRta").value = "";
         }
-        else {
-            document.querySelector("#captchaResultado").innerHTML="Su respuesta no coincide, vuelva a intentarlo otra vez por favor.";
-            generarCaptcha();
-            document.querySelector("#userRta").value = "";
-        }
+
 
 }
 
@@ -54,7 +49,7 @@ function add() {
     let primerPaisRta = document.querySelector("#primerPais").value;
     Predicciones.CampeonAdd = primerPaisRta;
 
-    let segundoPaisRta = document.querySelector("#segundoPais").value;
+    let segundoPaisRasdasdment.querySelector("#segundoPais").value;
     Predicciones.SubcampeonAdd = segundoPaisRta;
 
     let tercerPaisRta = document.querySelector("#tercerPais").value;
@@ -99,11 +94,4 @@ function vaciar_contenido() {
     document.querySelector("#primerPais").value = "";
     document.querySelector("#segundoPais").value = "";
     document.querySelector("#tercerPais").value = "";
-    document.querySelector("#userRta")
-}
-
-function borrar_tabla() {
-    Predicciones = [];
-    mostrar_tabla();
-    vaciar_contenido();
 }
